@@ -1,0 +1,19 @@
+@media screen and (max-width:700px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    } 
+    
+    .footer{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:400px) {
+    nav{
+        font-size: 15px;
+    } 
+    
+    .footer{
+        font-size: 14px;
+    }
+}

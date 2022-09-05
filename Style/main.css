@@ -1,0 +1,131 @@
+:root{
+    --amarelo: rgb(255, 213, 0);
+    --preto: rgb(0,0,0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--amarelo);
+
+}
+
+header{
+    background-color: var(--amarelo);
+    font-family: 'Arial Black';
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--preto);
+    font-family: 'Arial Black', 'times';
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    transition: 200ms;
+    color: rgb(19, 155, 1);
+}
+
+/*Filme primcipal*/
+.filme-principal{
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../Img/film.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1%;
+}
+
+.filme-principal .descricao{
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.filme-principal .container{
+    width: 80%;
+}
+
+.titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    color: var(--amarelo);
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    padding: 1% 2%;
+    margin-right: 1%;
+    font-size: 12px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    padding-top: 2% ;
+}
+
+.botao span{
+    margin-right: 8px;
+}
+
+
+.botao:hover{
+    transition: 400ms;
+    background-color: var(--amarelo);
+    color: var(--preto);
+    cursor: pointer;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrossel-filmes{
+    padding: 5px;
+}
+
+.footer{
+    padding: 5%;
+    border-top: 2px solid var(--amarelo );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer a:hover{
+    transition: 300ms;
+    color:rgb(19, 155, 1) ;
+}
